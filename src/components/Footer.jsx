@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
 
-<footer style={{ backgroundColor: '#343a40', color: '#fff', padding: '40px 0' }}>
+<footer style={{ backgroundColor: '#343a40', color: '#fff', padding: '40px ' ,marginTop:'370px' }}>
       <Container>
         <Row>
           {/* About Section */}

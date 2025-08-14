@@ -1,35 +1,20 @@
-import React, { useState } from 'react'
-import './Todo.css';
-import TodoItem from './TodoItem';
+import "./Todo.css";
+import Form from "./Form";
+import TodoList from "./TodoList";
+import { useState } from "react";
+useState
 const todo = () => {
-  const[todo,setTodo] = useState("")
-  const[todos,setTodos] = useState([])
 
-   function handleSubmit(e){
-        e.preventDefault();
-        setTodos([...todos,todo])
-        setTodo("")
-   }
-
+          const [todos, setTodos] = useState([]);
   return (
     <>
-    <div style={{marginLeft:'600px'}} className='d-flex  mt-5'>
-          <form onSubmit={handleSubmit} >
-            <input value={todo} className='form-control w-100' type="text" onChange={(e)=>setTodo(e.target.value)} />
-            <button  style={{marginLeft:'50px'}} className='btn btn-primary mt-3 text-center ' type='submit'>Submit</button>
-          </form>
-          <div className='text-center' style={{width:'300px', marginRight:'700px', border:'1px solid black', marginTop:'250px'}}>
-          {
-            
-            todos.map((item)=>(
-             <TodoItem key={item} item ={item} />
-             
-            ))
-          }
-          </div>
-    </div>
+      <div style={{ marginLeft: "600px" }} className="mt-5">
+       <Form todos={todos} setTodos={setTodos} />
+       <TodoList todos={todos} setTodos={setTodos} />
+       
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default todo
+export default todo;
