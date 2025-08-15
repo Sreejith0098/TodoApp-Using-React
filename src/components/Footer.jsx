@@ -1,14 +1,13 @@
-import React from 'react'
-const Footer = ({completedItems}) => {
+import React from "react";
+import styles from "./TodoItem.module.css";
+const Footer = ({ completedItems, totalTodos }) => {
   return (
-    <>
+    <div className={styles.footer}>
+      <div>Completed items:{completedItems}</div>
 
-<span>Completed items:{completedItems}</span>
+      <div>Total todos: {totalTodos}</div>
+    </div>
+  );
+};
 
-
- 
-    </>
-  )
-}
-
-export default Footer
+export default Footer;

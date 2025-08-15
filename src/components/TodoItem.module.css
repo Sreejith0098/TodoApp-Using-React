@@ -1,3 +1,18 @@
 .completed{
     text-decoration: line-through;
+    color: red;
+    
+}
+.footer{
+    background-color: #ffa8B6;
+    padding: 30px;
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header{
+    background-color: #ffa8B6;
+
 }

@@ -5,9 +5,10 @@ const Form = ({todos,setTodos}) => {
       
     function handleSubmit(e) {
         e.preventDefault();
-        setTodos([...todos, todo]);
-        setTodo({name:"",done:false});
-        
+        if(todo.name){
+            setTodos([...todos, todo]);
+        }
+            setTodo({name:"",done:false});
       }
   return (
     <div className='form-container' >
@@ -28,7 +29,6 @@ const Form = ({todos,setTodos}) => {
             Submit
           </button>
         </form>
-
     </div>
   )
 }
