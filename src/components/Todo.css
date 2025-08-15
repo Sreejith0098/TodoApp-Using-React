@@ -8,8 +8,8 @@
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
-.todo-tems{
-    background-color:white;
+.todo-items{
+    /* background-color:white; */
     margin-top: 10px;
     /* text-align: center; */
     padding: 8px;
@@ -25,4 +25,8 @@
 }
 .line{
     color: rgb(92, 132, 240);
+}
+.form{
+    margin-left: 500px;
+    padding-top: 20px;
 }

@@ -3,9 +3,9 @@ import TodoItem from "./TodoItem";
 import './Todo.css'
 const TodoList = ({todos,setTodos}) => {
   return (
-    <div className='todo-tems'>
+    <div className='todo-items'>
         {todos.map((item) => (
-                    <TodoItem key={item} item={item} todos={todos} setTodos={setTodos} />
+                    <TodoItem key={item.name} item={item} todos={todos} setTodos={setTodos} />
                   ))}
     </div>
   )
